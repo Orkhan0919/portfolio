@@ -1,0 +1,15 @@
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/bin/Debug/net8.0/AccessModifiersTest
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/bin/Debug/net8.0/AccessModifiersTest.deps.json
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/bin/Debug/net8.0/AccessModifiersTest.runtimeconfig.json
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/bin/Debug/net8.0/AccessModifiersTest.dll
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/bin/Debug/net8.0/AccessModifiersTest.pdb
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/obj/Debug/net8.0/AccessModifiersTest.GeneratedMSBuildEditorConfig.editorconfig
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/obj/Debug/net8.0/AccessModifiersTest.AssemblyInfoInputs.cache
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/obj/Debug/net8.0/AccessModifiersTest.AssemblyInfo.cs
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/obj/Debug/net8.0/AccessModifiersTest.csproj.CoreCompileInputs.cache
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/obj/Debug/net8.0/AccessModifiersTest.sourcelink.json
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/obj/Debug/net8.0/AccessModifiersTest.dll
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/obj/Debug/net8.0/refint/AccessModifiersTest.dll
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/obj/Debug/net8.0/AccessModifiersTest.pdb
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/obj/Debug/net8.0/AccessModifiersTest.genruntimeconfig.cache
+/home/potato/RiderProjects/AccessModifiersTest/AccessModifiersTest/obj/Debug/net8.0/ref/AccessModifiersTest.dll

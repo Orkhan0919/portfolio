@@ -1,6 +1,6 @@
 using System.Runtime.Serialization.Formatters;
 
-namespace ConsoleAppFRD;
+namespace Methods;
 
 public class Methodss
 {
@@ -283,7 +283,7 @@ public class Methodss
     public static void FindSymbol()
     {
         Console.WriteLine("Herfi daxil edin :");
-        char symbol = Console.ReadLine();
+        char symbol = Console.ReadLine()[0];
         Console.WriteLine("Cumleni daxil edin :");
         string cumle =  Console.ReadLine();
         int times = 0;

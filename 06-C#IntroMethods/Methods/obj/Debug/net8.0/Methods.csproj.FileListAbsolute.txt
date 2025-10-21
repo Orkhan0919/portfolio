@@ -1,0 +1,15 @@
+/home/potato/RiderProjects/Methods/Methods/bin/Debug/net8.0/Methods
+/home/potato/RiderProjects/Methods/Methods/bin/Debug/net8.0/Methods.deps.json
+/home/potato/RiderProjects/Methods/Methods/bin/Debug/net8.0/Methods.runtimeconfig.json
+/home/potato/RiderProjects/Methods/Methods/bin/Debug/net8.0/Methods.dll
+/home/potato/RiderProjects/Methods/Methods/bin/Debug/net8.0/Methods.pdb
+/home/potato/RiderProjects/Methods/Methods/obj/Debug/net8.0/Methods.GeneratedMSBuildEditorConfig.editorconfig
+/home/potato/RiderProjects/Methods/Methods/obj/Debug/net8.0/Methods.AssemblyInfoInputs.cache
+/home/potato/RiderProjects/Methods/Methods/obj/Debug/net8.0/Methods.AssemblyInfo.cs
+/home/potato/RiderProjects/Methods/Methods/obj/Debug/net8.0/Methods.csproj.CoreCompileInputs.cache
+/home/potato/RiderProjects/Methods/Methods/obj/Debug/net8.0/Methods.dll
+/home/potato/RiderProjects/Methods/Methods/obj/Debug/net8.0/refint/Methods.dll
+/home/potato/RiderProjects/Methods/Methods/obj/Debug/net8.0/Methods.pdb
+/home/potato/RiderProjects/Methods/Methods/obj/Debug/net8.0/Methods.genruntimeconfig.cache
+/home/potato/RiderProjects/Methods/Methods/obj/Debug/net8.0/ref/Methods.dll
+/home/potato/RiderProjects/Methods/Methods/obj/Debug/net8.0/Methods.sourcelink.json

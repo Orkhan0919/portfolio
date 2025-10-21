@@ -1,0 +1,15 @@
+/home/potato/RiderProjects/StrBuilder/StrBuilder/bin/Debug/net8.0/StrBuilder
+/home/potato/RiderProjects/StrBuilder/StrBuilder/bin/Debug/net8.0/StrBuilder.deps.json
+/home/potato/RiderProjects/StrBuilder/StrBuilder/bin/Debug/net8.0/StrBuilder.runtimeconfig.json
+/home/potato/RiderProjects/StrBuilder/StrBuilder/bin/Debug/net8.0/StrBuilder.dll
+/home/potato/RiderProjects/StrBuilder/StrBuilder/bin/Debug/net8.0/StrBuilder.pdb
+/home/potato/RiderProjects/StrBuilder/StrBuilder/obj/Debug/net8.0/StrBuilder.GeneratedMSBuildEditorConfig.editorconfig
+/home/potato/RiderProjects/StrBuilder/StrBuilder/obj/Debug/net8.0/StrBuilder.AssemblyInfoInputs.cache
+/home/potato/RiderProjects/StrBuilder/StrBuilder/obj/Debug/net8.0/StrBuilder.AssemblyInfo.cs
+/home/potato/RiderProjects/StrBuilder/StrBuilder/obj/Debug/net8.0/StrBuilder.csproj.CoreCompileInputs.cache
+/home/potato/RiderProjects/StrBuilder/StrBuilder/obj/Debug/net8.0/StrBuilder.sourcelink.json
+/home/potato/RiderProjects/StrBuilder/StrBuilder/obj/Debug/net8.0/StrBuilder.dll
+/home/potato/RiderProjects/StrBuilder/StrBuilder/obj/Debug/net8.0/refint/StrBuilder.dll
+/home/potato/RiderProjects/StrBuilder/StrBuilder/obj/Debug/net8.0/StrBuilder.pdb
+/home/potato/RiderProjects/StrBuilder/StrBuilder/obj/Debug/net8.0/StrBuilder.genruntimeconfig.cache
+/home/potato/RiderProjects/StrBuilder/StrBuilder/obj/Debug/net8.0/ref/StrBuilder.dll

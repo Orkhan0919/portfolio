@@ -1,0 +1,15 @@
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/obj/Debug/net8.0/PersonManagemet.GeneratedMSBuildEditorConfig.editorconfig
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/obj/Debug/net8.0/PersonManagemet.AssemblyInfoInputs.cache
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/obj/Debug/net8.0/PersonManagemet.AssemblyInfo.cs
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/obj/Debug/net8.0/PersonManagemet.csproj.CoreCompileInputs.cache
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/obj/Debug/net8.0/PersonManagemet.sourcelink.json
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/bin/Debug/net8.0/PersonManagemet
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/bin/Debug/net8.0/PersonManagemet.deps.json
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/bin/Debug/net8.0/PersonManagemet.runtimeconfig.json
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/bin/Debug/net8.0/PersonManagemet.dll
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/bin/Debug/net8.0/PersonManagemet.pdb
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/obj/Debug/net8.0/PersonManagemet.dll
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/obj/Debug/net8.0/refint/PersonManagemet.dll
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/obj/Debug/net8.0/PersonManagemet.pdb
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/obj/Debug/net8.0/PersonManagemet.genruntimeconfig.cache
+/home/potato/RiderProjects/PersonManagemet/PersonManagemet/obj/Debug/net8.0/ref/PersonManagemet.dll

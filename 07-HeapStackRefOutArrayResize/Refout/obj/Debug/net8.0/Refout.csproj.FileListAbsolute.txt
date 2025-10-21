@@ -1,0 +1,15 @@
+/home/potato/RiderProjects/Refout/Refout/bin/Debug/net8.0/Refout
+/home/potato/RiderProjects/Refout/Refout/bin/Debug/net8.0/Refout.deps.json
+/home/potato/RiderProjects/Refout/Refout/bin/Debug/net8.0/Refout.runtimeconfig.json
+/home/potato/RiderProjects/Refout/Refout/bin/Debug/net8.0/Refout.dll
+/home/potato/RiderProjects/Refout/Refout/bin/Debug/net8.0/Refout.pdb
+/home/potato/RiderProjects/Refout/Refout/obj/Debug/net8.0/Refout.GeneratedMSBuildEditorConfig.editorconfig
+/home/potato/RiderProjects/Refout/Refout/obj/Debug/net8.0/Refout.AssemblyInfoInputs.cache
+/home/potato/RiderProjects/Refout/Refout/obj/Debug/net8.0/Refout.AssemblyInfo.cs
+/home/potato/RiderProjects/Refout/Refout/obj/Debug/net8.0/Refout.csproj.CoreCompileInputs.cache
+/home/potato/RiderProjects/Refout/Refout/obj/Debug/net8.0/Refout.sourcelink.json
+/home/potato/RiderProjects/Refout/Refout/obj/Debug/net8.0/Refout.dll
+/home/potato/RiderProjects/Refout/Refout/obj/Debug/net8.0/refint/Refout.dll
+/home/potato/RiderProjects/Refout/Refout/obj/Debug/net8.0/Refout.pdb
+/home/potato/RiderProjects/Refout/Refout/obj/Debug/net8.0/Refout.genruntimeconfig.cache
+/home/potato/RiderProjects/Refout/Refout/obj/Debug/net8.0/ref/Refout.dll
