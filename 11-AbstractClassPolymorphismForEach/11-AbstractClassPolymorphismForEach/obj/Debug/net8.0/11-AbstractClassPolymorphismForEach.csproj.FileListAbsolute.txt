@@ -1,0 +1,15 @@
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/bin/Debug/net8.0/11-AbstractClassPolymorphismForEach
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/bin/Debug/net8.0/11-AbstractClassPolymorphismForEach.deps.json
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/bin/Debug/net8.0/11-AbstractClassPolymorphismForEach.runtimeconfig.json
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/bin/Debug/net8.0/11-AbstractClassPolymorphismForEach.dll
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/bin/Debug/net8.0/11-AbstractClassPolymorphismForEach.pdb
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/obj/Debug/net8.0/11-AbstractClassPolymorphismForEach.GeneratedMSBuildEditorConfig.editorconfig
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/obj/Debug/net8.0/11-AbstractClassPolymorphismForEach.AssemblyInfoInputs.cache
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/obj/Debug/net8.0/11-AbstractClassPolymorphismForEach.AssemblyInfo.cs
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/obj/Debug/net8.0/11-AbstractClassPolymorphismForEach.csproj.CoreCompileInputs.cache
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/obj/Debug/net8.0/11-AbstractClassPolymorphismForEach.sourcelink.json
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/obj/Debug/net8.0/11-AbstractClassPolymorphismForEach.dll
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/obj/Debug/net8.0/refint/11-AbstractClassPolymorphismForEach.dll
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/obj/Debug/net8.0/11-AbstractClassPolymorphismForEach.pdb
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/obj/Debug/net8.0/11-AbstractClassPolymorphismForEach.genruntimeconfig.cache
+/home/potato/Apa-102/11-AbstractClassPolymorphismForEach/11-AbstractClassPolymorphismForEach/obj/Debug/net8.0/ref/11-AbstractClassPolymorphismForEach.dll
