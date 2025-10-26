@@ -1,0 +1,15 @@
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/bin/Debug/net8.0/12-InterfaceAbstraction
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/bin/Debug/net8.0/12-InterfaceAbstraction.deps.json
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/bin/Debug/net8.0/12-InterfaceAbstraction.runtimeconfig.json
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/bin/Debug/net8.0/12-InterfaceAbstraction.dll
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/bin/Debug/net8.0/12-InterfaceAbstraction.pdb
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/obj/Debug/net8.0/12-InterfaceAbstraction.GeneratedMSBuildEditorConfig.editorconfig
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/obj/Debug/net8.0/12-InterfaceAbstraction.AssemblyInfoInputs.cache
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/obj/Debug/net8.0/12-InterfaceAbstraction.AssemblyInfo.cs
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/obj/Debug/net8.0/12-InterfaceAbstraction.csproj.CoreCompileInputs.cache
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/obj/Debug/net8.0/12-InterfaceAbstraction.sourcelink.json
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/obj/Debug/net8.0/12-InterfaceAbstraction.dll
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/obj/Debug/net8.0/refint/12-InterfaceAbstraction.dll
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/obj/Debug/net8.0/12-InterfaceAbstraction.pdb
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/obj/Debug/net8.0/12-InterfaceAbstraction.genruntimeconfig.cache
+/home/potato/Apa-102/12-InterfaceAbstraction/12-InterfaceAbstraction/obj/Debug/net8.0/ref/12-InterfaceAbstraction.dll
