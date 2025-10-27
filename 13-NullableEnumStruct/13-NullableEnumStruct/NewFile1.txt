@@ -1,0 +1,117 @@
+
+Sadə kafe sifariş sistemi yaratmalısınız
+DrinkType Enum
+İçki növünü göstərir.
+
+Dəyərlər:
+Coffee - Qəhvə (0)
+Tea - Çay (1)
+Juice - Şirə (2)
+Water - Su (3)
+
+-----------------------------------------------------------
+DrinkSize Enum
+İçki ölçüsünü göstərir.
+
+Dəyərlər:
+Small - Kiçik (0)
+Medium - Orta (1)
+Large - Böyük (2)
+-----------------------------------------------------------
+OrderStatus Enum
+Sifarişin statusunu göstərir.
+
+Dəyərlər:
+New - Yeni (0)
+Preparing - Hazırlanır (1)
+Ready - Hazırdır (2)
+Delivered - Təhvil verilib (3)
+----------------------------------------------------------
+DrinkOrder Sinfi
+Bir içki sifarişini təmsil edir.
+
+Xüsusiyyətlər (Properties):
+OrderNumber - Sifariş nömrəsi (int)
+CustomerName - Müştəri adı (string)
+Drink - İçki növü (DrinkType enum)
+Size - Ölçü (DrinkSize enum)
+Status - Status (OrderStatus enum)
+Price - Qiymət (decimal)
+
+Constructor:
+Parametrli constructor (orderNumber, customerName, drink, size)
+Status default olaraq OrderStatus.New
+Price-ı CalculatePrice() ilə hesabla
+
+Metodlar:
+CalculatePrice() - Qiyməti hesabla (decimal)
+
+Coffee: Small=3, Medium=4, Large=5
+Tea: Small=2, Medium=3, Large=4
+Juice: Small=4, Medium=5, Large=6
+Water: Small=1, Medium=1.5, Large=2
+Switch statement istifadə edin
+ 
+UpdateStatus(OrderStatus newStatus) - Statusu dəyiş
+Status = newStatus
+Console-a yaz: "Sifariş #[OrderNumber] statusu: [newStatus]"
+DisplayOrder() - Sifarişi göstər
+---------------------------------------------------------
+Program.cs Tələbləri
+Ssenarilər:
+
+1. Üç sifariş yaradın:
+
+Sifariş 1:
+OrderNumber: 101
+CustomerName: "Ali"
+Drink: Coffee
+Size: Medium
+DisplayOrder() çağır
+Status-u Preparing, sonra Ready, sonra Delivered et
+Hər dəyişiklikdən sonra yeni statusu göstər
+
+Sifariş 2:
+OrderNumber: 102
+CustomerName: "Leyla"
+Drink: Tea
+Size: Large
+DisplayOrder() çağır
+Status-u yalnız Ready et
+Göstər
+
+Sifariş 3:
+OrderNumber: 103
+CustomerName: "Vüqar"
+Drink: Juice
+Size: Small
+DisplayOrder() çağır
+
+2. Enum metodları:
+GetValues() istifadə edin:
+
+Bütün DrinkType dəyərlərini göstərin
+Bütün DrinkSize dəyərlərini göstərin
+Bütün OrderStatus dəyərlərini göstərin
+
+ToString() istifadə edin:
+DrinkType.Coffee.ToString() → "Coffee"
+DrinkSize.Large.ToString() → "Large"
+
+Parse() istifadə edin:
+String "Tea" → DrinkType.Tea
+String "Medium" → DrinkSize.Medium
+
+3. Sadə statistika:
+Ümumi sifariş: 3
+Birinci sifarişin qiyməti
+İkinci sifarişin qiyməti
+Üçüncü sifarişin qiyməti
+Ümumi məbləğ (manual topla)
+
+✅ Enum yaratmaq
+✅ Enum dəyərləri istifadə etmək
+✅ Switch statement ilə enum
+✅ Enum.ToString()
+✅ Enum.Parse()
+✅ Enum.GetValues()

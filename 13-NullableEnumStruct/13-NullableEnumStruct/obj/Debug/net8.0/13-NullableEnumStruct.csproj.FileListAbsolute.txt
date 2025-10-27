@@ -1,0 +1,15 @@
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/bin/Debug/net8.0/13-NullableEnumStruct
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/bin/Debug/net8.0/13-NullableEnumStruct.deps.json
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/bin/Debug/net8.0/13-NullableEnumStruct.runtimeconfig.json
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/bin/Debug/net8.0/13-NullableEnumStruct.dll
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/bin/Debug/net8.0/13-NullableEnumStruct.pdb
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/obj/Debug/net8.0/13-NullableEnumStruct.GeneratedMSBuildEditorConfig.editorconfig
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/obj/Debug/net8.0/13-NullableEnumStruct.AssemblyInfoInputs.cache
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/obj/Debug/net8.0/13-NullableEnumStruct.AssemblyInfo.cs
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/obj/Debug/net8.0/13-NullableEnumStruct.csproj.CoreCompileInputs.cache
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/obj/Debug/net8.0/13-NullableEnumStruct.sourcelink.json
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/obj/Debug/net8.0/13-NullableEnumStruct.dll
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/obj/Debug/net8.0/refint/13-NullableEnumStruct.dll
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/obj/Debug/net8.0/13-NullableEnumStruct.pdb
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/obj/Debug/net8.0/13-NullableEnumStruct.genruntimeconfig.cache
+/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/obj/Debug/net8.0/ref/13-NullableEnumStruct.dll
