@@ -1,0 +1,120 @@
+Hər kəs öz github profilində olan Portfolio reposunda 14-StatiClassExtensionMethodsExceptions
+adında folder yaradır və tapşırığı həmin folderə yerləşdirib, linki classrooma əlavə edir. Hər kəs əlindən gələnin ən yaxşısını etməyə çalışsın. Suallarınız yaranarsa soruşmaqdan çəkinməyin. Hamıya uğurlar!
+
+Task: Login System with Custom Exceptions
+Tapşırığın Şərtləri.
+
+1.Yaradılmalı olan Custom Exception-lar (Minimum 4 ədəd):
+
+InvalidUsernameException
+Username validasiyası üçün exception.
+Constructor-lar:
+•    Parametrsiz constructor - default mesaj
+•    Parametrli constructor (string message) - custom mesaj
+Nə zaman atılır:
+•    Username boş olduqda
+•    Username 3 simvoldan az olduqda
+----------------------------------------------------------------------
+InvalidPasswordException
+Password validasiyası üçün exception.
+Constructor-lar:
+•    Parametrsiz constructor - default mesaj
+•    Parametrli constructor (string message) - custom mesaj
+Nə zaman atılır:
+•    Password boş olduqda
+•    Password 6 simvoldan az olduqda
+----------------------------------------------------------------------
+UserNotFoundException
+İstifadəçi tapılmadıqda exception.
+Constructor-lar:
+•    Parametrsiz constructor - default mesaj
+•    Parametrli constructor (string username) - username göstərən mesaj
+Nə zaman atılır:
+•    Sistemdə belə username yoxdursa
+----------------------------------------------------------------------
+IncorrectPasswordException
+Şifrə səhv olduqda exception.
+Property:
+•    AttemptsLeft (int) - Neçə cəhd qalıb
+Constructor:
+•    Parametrli constructor (int attemptsLeft)
+•    Mesajda attempts left göstər
+Nə zaman atılır:
+•    Password düzgün deyil və hələ cəhd qalıb
+---------------------------------------------------------------------
+AccountLockedException (Bonus - 5 bal)
+Hesab bloklandıqda exception.
+Constructor:
+•    Parametrsiz constructor - default mesaj
+Nə zaman atılır:
+•    3 dəfə səhv şifrə daxil edildikdə
+•    Hesab artıq bloklanıbsa
+
+2. User Sinfi
+Properties:
+•    Username (string)
+•    Password (string)
+•    IsLocked (bool)
+•    FailedAttempts (int)
+Constructor:
+•    Parametrli constructor (username, password)
+•    IsLocked default: false
+•    FailedAttempts default: 0
+
+2. LoginSystem Sinfi
+Private field:
+•    users (User array) - 3 istifadəçi
+•    MaxAttempts (const int = 3)
+Constructor:
+•    3 istifadəçi yarat:
+•    admin / admin123
+•    student / student123
+•    teacher / teacher123
+Metodlar:
+ValidateUsername(string username)
+•    Boş və ya 3-dən az simbol varsa → InvalidUsernameException at
+•    Return type: void
+
+ValidatePassword(string password)
+•    Boş və ya 6-dan az simbol varsa → InvalidPasswordException at
+•    Return type: void
+
+FindUser(string username) (private)
+•    For loop ilə username-ə görə user tap
+•    Böyük/kiçik hərf fərqi olmasın (ToLower istifadə et)
+•    Return: User (null ola bilər)
+
+Login(string username, string password)
+•    ValidateUsername çağır
+•    ValidatePassword çağır
+•    FindUser çağır
+•    User null-dursa → UserNotFoundException at
+•    User.IsLocked true-dursa → AccountLockedException at
+•    Password düzdürsə:
+      •    FailedAttempts sıfırla
+      •    "Login successful! Welcome, [username]!" mesajı
+      •    Return true
+•    Password səhvdirsə:
+      •    FailedAttempts artır
+      •    Attempts left hesabla
+      •    Cəhd qalıbsa → IncorrectPasswordException at
+      •    Cəhd qalmayıbsa → IsLocked = true və AccountLockedException at
+      •    Return type: bool
+
+4. Program.cs (Main metod)
+
+1.    LoginSystem obyekti yarat
+
+2.   While(true) loop:
+•    Username soruş
+•    Password soruş
+•    Login() çağır
+•    Uğurlu login-dən sonra break
+
+3.    Try-Catch blokları (hər exception üçün ayrı):
+•    InvalidUsernameException → "ERROR: " + mesaj göstər
+•    InvalidPasswordException → "ERROR: " + mesaj göstər
+•    UserNotFoundException → "ERROR: " + mesaj göstər + mövcud userləri göstər
+•    IncorrectPasswordException → "WARNING: " + mesaj göstər (attempts left ilə)
+•    AccountLockedException → "CRITICAL: " + mesaj göstər + "contact admin" + break
+•    Exception (generic) → "UNEXPECTED ERROR: " + mesaj göstər

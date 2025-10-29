@@ -1,0 +1,15 @@
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/obj/Debug/net8.0/14-StaticClassExtension.GeneratedMSBuildEditorConfig.editorconfig
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/obj/Debug/net8.0/14-StaticClassExtension.AssemblyInfoInputs.cache
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/obj/Debug/net8.0/14-StaticClassExtension.AssemblyInfo.cs
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/obj/Debug/net8.0/14-StaticClassExtension.csproj.CoreCompileInputs.cache
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/obj/Debug/net8.0/14-StaticClassExtension.sourcelink.json
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/bin/Debug/net8.0/14-StaticClassExtension
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/bin/Debug/net8.0/14-StaticClassExtension.deps.json
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/bin/Debug/net8.0/14-StaticClassExtension.runtimeconfig.json
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/bin/Debug/net8.0/14-StaticClassExtension.dll
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/bin/Debug/net8.0/14-StaticClassExtension.pdb
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/obj/Debug/net8.0/14-StaticClassExtension.dll
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/obj/Debug/net8.0/refint/14-StaticClassExtension.dll
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/obj/Debug/net8.0/14-StaticClassExtension.pdb
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/obj/Debug/net8.0/14-StaticClassExtension.genruntimeconfig.cache
+/home/potato/Apa-102/14-StaticClassExtension/14-StaticClassExtension/obj/Debug/net8.0/ref/14-StaticClassExtension.dll
