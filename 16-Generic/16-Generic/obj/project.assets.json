@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/13-NullableEnumStruct.csproj",
-      "projectName": "13-NullableEnumStruct",
-      "projectPath": "/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/13-NullableEnumStruct.csproj",
+      "projectUniqueName": "/home/potato/Apa-102/16-Generic/16-Generic/16-Generic.csproj",
+      "projectName": "16-Generic",
+      "projectPath": "/home/potato/Apa-102/16-Generic/16-Generic/16-Generic.csproj",
       "packagesPath": "/home/potato/.nuget/packages/",
-      "outputPath": "/home/potato/Apa-102/13-NullableEnumStruct/13-NullableEnumStruct/obj/",
+      "outputPath": "/home/potato/Apa-102/16-Generic/16-Generic/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/potato/.nuget/NuGet/NuGet.Config"

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("14-StaticClassExtension")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+405b4a61284f5a95d216ee0820b7848c0ef1e3ca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a4f7433adc98973c6306299ad99784bb96eefc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("14-StaticClassExtension")]
 [assembly: System.Reflection.AssemblyTitleAttribute("14-StaticClassExtension")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

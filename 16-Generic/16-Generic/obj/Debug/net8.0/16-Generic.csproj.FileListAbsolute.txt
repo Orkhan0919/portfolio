@@ -1,0 +1,15 @@
+/home/potato/Apa-102/16-Generic/16-Generic/bin/Debug/net8.0/16-Generic
+/home/potato/Apa-102/16-Generic/16-Generic/bin/Debug/net8.0/16-Generic.deps.json
+/home/potato/Apa-102/16-Generic/16-Generic/bin/Debug/net8.0/16-Generic.runtimeconfig.json
+/home/potato/Apa-102/16-Generic/16-Generic/bin/Debug/net8.0/16-Generic.dll
+/home/potato/Apa-102/16-Generic/16-Generic/bin/Debug/net8.0/16-Generic.pdb
+/home/potato/Apa-102/16-Generic/16-Generic/obj/Debug/net8.0/16-Generic.GeneratedMSBuildEditorConfig.editorconfig
+/home/potato/Apa-102/16-Generic/16-Generic/obj/Debug/net8.0/16-Generic.AssemblyInfoInputs.cache
+/home/potato/Apa-102/16-Generic/16-Generic/obj/Debug/net8.0/16-Generic.AssemblyInfo.cs
+/home/potato/Apa-102/16-Generic/16-Generic/obj/Debug/net8.0/16-Generic.csproj.CoreCompileInputs.cache
+/home/potato/Apa-102/16-Generic/16-Generic/obj/Debug/net8.0/16-Generic.sourcelink.json
+/home/potato/Apa-102/16-Generic/16-Generic/obj/Debug/net8.0/16-Generic.dll
+/home/potato/Apa-102/16-Generic/16-Generic/obj/Debug/net8.0/refint/16-Generic.dll
+/home/potato/Apa-102/16-Generic/16-Generic/obj/Debug/net8.0/16-Generic.pdb
+/home/potato/Apa-102/16-Generic/16-Generic/obj/Debug/net8.0/16-Generic.genruntimeconfig.cache
+/home/potato/Apa-102/16-Generic/16-Generic/obj/Debug/net8.0/ref/16-Generic.dll

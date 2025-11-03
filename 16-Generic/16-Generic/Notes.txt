@@ -1,0 +1,183 @@
+Task: Kitabxana idarəetmə sistemi yaratmalısınız
+Bu sistemdə Generic və Collections istifadə edərək kitabları, üzvləri idarə edəcəksiniz.
+
+1.Book Sinfi
+Kitabı təmsil edir.
+
+Xüsusiyyətlər (Properties):
+Id - Kitab ID (int)
+Title - Başlıq (string)
+Author - Müəllif (string)
+Year - Nəşr ili (int)
+PageCount - Səhifə sayı (int)
+Constructor:
+Parametrli constructor yaradın
+Bütün field-ləri təyin edin
+Metodlar:
+1.DisplayInfo() - Kitab məlumatlarını göstərir
+Format: "[ID] Başlıq - Müəllif (İl) - Səhifə sayı"
+Nümunə: "[1] Martin Eden - Jack London (1909) - 400 səhifə"
+---------------------------------------------------------------------------
+2.Member Sinfi
+Kitabxana üzvünü təmsil edir.
+Xüsusiyyətlər (Properties):
+Id - Üzv ID (int)
+Name - Ad (string)
+Email - Email (string)
+BorrowedBooks - Borc götürdüyü kitablar (List<Book>)
+Constructor:
+Parametrli constructor (id, name, email)
+BorrowedBooks-u boş list olaraq initialize edin
+Metodlar:
+1. BorrowBook(Book book) - Kitab götürür
+Yoxla: BorrowedBooks.Count < 3 (maksimum 3 kitab)
+Əgər limit keçilibsə: Console-a yaz "Maksimum 3 kitab götürə bilərsiniz!"
+Əgər ok: List-ə əlavə et
+Console-a yaz: "Kitab götürüldü: [Title]"
+2.ReturnBook(int bookId) - Kitabı qaytarır
+BorrowedBooks-dan ID-yə görə tap (foreach istifadə et)
+Əgər tapılıbsa: List-dən sil
+Console-a yaz: "Kitab qaytarıldı: [Title]"
+3.DisplayBorrowedBooks() - Borc götürülmüş kitabları göstərir
+Əgər list boşdursa: "Borc kitab yoxdur"
+Əgər varsa: foreach ilə hər birini göstər
+-------------------------------------------------------------------------------
+3.Library<T> Generic Class
+Generic kitabxana sinfi - istənilən tip üçün işləyir.
+
+Xüsusiyyətlər (Properties):
+Items - Elementlər siyahısı (List<T>)
+Name - Kitabxana adı (string)
+Constructor:
+Parametrli constructor (name)
+Items-i boş list olaraq initialize edin
+Metodlar:
+1.Add(T item) - Element əlavə edir
+Items.Add() istifadə et
+Console: "Əlavə edildi"
+2.Remove(T item) - Element silir
+Items.Remove() istifadə et
+Console: "Silindi"
+3.GetAll() - Bütün elementləri qaytarır (List<T>)
+Items-i return et
+4.Count() - Element sayını qaytarır (int)
+Items.Count-u return et
+5.FindByIndex(int index) - İndeksə görə element tapır (T)
+Yoxla: index limiti daxilində?
+Items[index] return et
+-------------------------------------------------------------------------
+4.BookManager Sinfi
+Kitab idarəetməsi (4 növ collection istifadə edir).
+
+Xüsusiyyətlər (Properties):
+Books - Bütün kitablar (List<Book>)
+BooksByAuthor - Müəllifə görə kitablar (Dictionary<string, List<Book>>)
+WaitingQueue - Gözləmə növbəsi (Queue<string>)
+RecentlyReturned - Son qaytarılan kitablar (Stack<Book>)
+Constructor:
+Hər 4 collection-u initialize edin
+Metodlar:
+1.AddBook(Book book) - Kitab əlavə edir
+Books List-inə əlavə et
+Dictionary-yə əlavə et:
+Əgər author key yoxdursa: yeni List yarat
+Author key-inə kitabı əlavə et
+2.SearchByTitle(string title) - Başlığa görə axtarır (Book)
+Books List-ində foreach ilə tap
+Title uyğun gələrsə return et
+Tapılmazsa null return et
+3.GetBooksByAuthor(string author) - Müəllifin kitablarını qaytarır (List<Book>)
+Yoxla: Dictionary-də author key var?
+Varsa: həmin List-i return et
+Yoxsa: boş List return et
+4.AddToWaitingQueue(string memberName) - Növbəyə əlavə edir
+Queue.Enqueue() istifadə et
+Console: "[memberName] növbəyə əlavə olundu"
+5.ServeNextInQueue() - Növbədən növbəti üzvü alır (string)
+Yoxla: Queue boş deyil?
+Queue.Dequeue() istifadə et və return et
+Boşdursa null return et
+6.ReturnBook(Book book) - Kitabı qəbul edir (Stack-ə əlavə)
+Stack.Push() istifadə et
+Console: "Kitab qəbul edildi: [Title]"
+7.GetLastReturnedBook() - Son qaytarılan kitabı göstərir (Book)
+Yoxla: Stack boş deyil?
+Stack.Peek() istifadə et (silmir, yalnız baxır!)
+Boşdursa null return et
+--------------------------------------------------------------------------------
+Program.cs Tələbləri
+Main metodunda aşağıdakı ssenariləri həyata keçirin:
+Ssenarilər:
+1. Kitablar yaradın (5 kitab):
+Book 1: ID=1, Title="Martin Eden", Author="Jack London", Year=1909, PageCount=400
+Book 2: ID=2, Title="1984", Author="George Orwell", Year=1949, PageCount=328
+Book 3: ID=3, Title="Animal Farm", Author="George Orwell", Year=1945, PageCount=112
+Book 4: ID=4, Title="Ağ Gəmi", Author="Cingiz Aytmatov", Year=1970, PageCount=200
+Book 5: ID=5, Title="Qırıq Budaq", Author="Elçin", Year=1998, PageCount=350
+Hər kitabın məlumatlarını göstərin (DisplayInfo)
+
+2. Generic Library<T> test edin:
+Library<Book> tipində obyekt yaradın (ad: "Milli Kitabxana")
+5 kitabı əlavə edin (Add method)
+Kitab sayını göstərin (Count method)
+İndeks 0-dakı kitabı tapın və göstərin
+İndeks 2-dəki kitabı tapın və göstərin
+Bütün kitabları göstərin (GetAll və foreach)
+3. List<T> - Üzvlər yaradın:
+List<Member> yaradın
+3 üzv əlavə edin:
+ID=1, Name="Ali Məmmədov", Email="ali@mail.com"
+ID=2, Name="Leyla Həsənova", Email="leyla@mail.com"
+ID=3, Name="Vüqar Əliyev", Email="vuqar@mail.com"
+2 kitab götürsün (book1, book2)
+Borc kitablarını göstərin
+1 kitabı qaytarsın (bookId: 1)
+Yenidən borc kitablarını göstərin
+3 kitab götürsün (book3, book4, book5)
+4-cü kitab götürməyə çalışsın (limit xəbərdarlığı olmalı)
+4. Dictionary<TKey, TValue> - Müəllifə görə axtarış:
+BookManager obyekti yaradın
+5 kitabı AddBook ilə əlavə edin
+George Orwell-in kitablarını tapın (GetBooksByAuthor)
+Tapılan kitabları göstərin (foreach)
+Gözlənilən: 2 kitab
+Cingiz Aytmatov-un kitablarını tapın
+Gözlənilən: 1 kitab
+Jack London-un kitablarını tapın
+Gözlənilən: 1 kitab
+Olmayan müəllif axtarın (məs: "Dostoyevski")
+Gözlənilən: boş list (0 kitab)
+5. Queue<T> - Gözləmə növbəsi:
+3 nəfəri növbəyə əlavə edin (AddToWaitingQueue):
+"Nigar"
+"Rəşad"
+"Səbinə"
+Növbədə neçə nəfər var? (Count)Növbədən birinci nəfəri xidmət edin (ServeNextInQueue)
+Göstərin: "Xidmət edilir: Nigar"
+İndi növbədə neçə nəfər qalıb?Daha 1 nəfəri xidmət edinNövbədə qalan sayı göstərinDaha 1 nəfəri xidmət edin (növbə boşalmalı)Növbəni yoxlayın (0 olmalı)
+6. Stack<T> - Son qaytarılan kitablar:
+3 kitabı stack-ə əlavə edin (ReturnBook):
+book1
+book2
+book3
+Stack-də neçə kitab var? (Count)
+Gözlənilən: 3
+Son qaytarılan kitabı göstərin (GetLastReturnedBook)
+Gözlənilən: book3 (Animal Farm)
+Stack-dən 1 kitabı çıxarın (Pop)İndi stack-də neçə kitab var?
+Gözlənilən: 2
+Yenidən son kitabı göstərin (GetLastReturnedBook)
+Gözlənilən: book2 (1984)
+7. Axtarış testi:
+"1984" adlı kitabı axtarın (SearchByTitle)
+Tapılan kitabı göstərin
+Olmayan kitab axtarın ("Harry Potter")
+Nəticəni yoxlayın (null olmalı)
+Null check edin və mesaj göstərin
+8. Statistika (manual hesablama):
+Ümumi kitab sayı: Books.Count
+Ümumi üzv sayı: members.Count
+Növbədə nəfər sayı: WaitingQueue.Count
+Stack-də kitab sayı: RecentlyReturned.Count
+Ən köhnə kitabın ilini tap (foreach ilə minimum tap)
+Ən yeni kitabın ilini tap (foreach ilə maksimum tap)
