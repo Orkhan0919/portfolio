@@ -1,0 +1,15 @@
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/bin/Debug/net8.0/17-DirectoryStreamReader
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/bin/Debug/net8.0/17-DirectoryStreamReader.deps.json
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/bin/Debug/net8.0/17-DirectoryStreamReader.runtimeconfig.json
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/bin/Debug/net8.0/17-DirectoryStreamReader.dll
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/bin/Debug/net8.0/17-DirectoryStreamReader.pdb
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/obj/Debug/net8.0/17-DirectoryStreamReader.GeneratedMSBuildEditorConfig.editorconfig
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/obj/Debug/net8.0/17-DirectoryStreamReader.AssemblyInfoInputs.cache
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/obj/Debug/net8.0/17-DirectoryStreamReader.AssemblyInfo.cs
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/obj/Debug/net8.0/17-DirectoryStreamReader.csproj.CoreCompileInputs.cache
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/obj/Debug/net8.0/17-DirectoryStreamReader.sourcelink.json
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/obj/Debug/net8.0/17-DirectoryStreamReader.dll
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/obj/Debug/net8.0/refint/17-DirectoryStreamReader.dll
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/obj/Debug/net8.0/17-DirectoryStreamReader.pdb
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/obj/Debug/net8.0/17-DirectoryStreamReader.genruntimeconfig.cache
+/home/potato/Apa-102/17-DirectoryStreamReader/17-DirectoryStreamReader/obj/Debug/net8.0/ref/17-DirectoryStreamReader.dll

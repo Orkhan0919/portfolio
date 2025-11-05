@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17-DirectoryStreamReader", "17-DirectoryStreamReader\17-DirectoryStreamReader.csproj", "{6BB9E0C5-BB46-4E60-87D0-4C6C570A3A69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BB9E0C5-BB46-4E60-87D0-4C6C570A3A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB9E0C5-BB46-4E60-87D0-4C6C570A3A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB9E0C5-BB46-4E60-87D0-4C6C570A3A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB9E0C5-BB46-4E60-87D0-4C6C570A3A69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
