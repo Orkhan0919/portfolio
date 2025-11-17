@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+a {
+    text-decoration: none;
+}
+.row {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; 
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px; 
+
+
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 32px; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #63ffb1, #b044ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.text3{
+    display: block; 
+   text-align: center; 
+   
+}
+.text4 {
+    display: inline-block;
+}
+.container{
+    background: white;
+    border-radius: 5px;
+    padding: 60px 60px;
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.text1 {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.input-group input.email {
+    margin-bottom: 25px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+
+}
+.input-group input.passwd {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+
+}
+
+.login-btn {
+    width: 350px;
+    height: 50px;
+    background: linear-gradient(135deg, #63ffb1, #b044ff);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
