@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-right: 50px;
+}
+.pr1{
+    margin: 30px;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    padding: 20px 40px;
+    font-size: 16px;
+}
+
+.sort-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.sort-area select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #fff;
+}
+
+.sort-area p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.sort-area label {
+    cursor: pointer;
+}
+
+.sort-area input {
+    cursor: pointer;
+}
+
+.all-boxes {
+    position: relative;
+    width: 1230px;
+    height: 1500px; 
+    margin-top: 50px;
+}
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.all-boxes div {
+    width: 200px;
+    height: 290px;
+
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    position: absolute;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    cursor: pointer;
+    
+   
+    
+}
+.box1{
+top: 20px;
+left: 262px;
+overflow: hidden;
+}
+.all-boxes img {
+    padding-top: 30px;
+    width: 200px;  
+    height: 180px; 
+    object-fit: contain;
+   
+}
+.all-boxes h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+}
+
+.box2 {
+     top: 20px; 
+     left: 524px; 
+     overflow: hidden;
+
+    }
+.box3 {
+     top: 20px;
+      left: 788px; 
+      overflow: hidden;
+
+    }
+
+.box4 {
+     top: 350px; 
+     left: 262px;
+     overflow: hidden;
+
+
+    }
+.box5 {
+     top: 350px;     
+     left: 524px; 
+     overflow: hidden;
+
+
+    }
+.box6 {
+     top: 350px;  
+     left: 788px; 
+     overflow: hidden;
+
+
+    }
+
+.box7  {
+     top: 680px; 
+     left: 262px; 
+     overflow: hidden;
+
+    }
+.box8  {
+     top: 680px; 
+     left: 524px; 
+     overflow: hidden;
+
+    }
+.box9  {
+     top: 680px; 
+     left: 788px; 
+     overflow: hidden;
+
+    }
+
+.box10 {
+      top: 1000px; 
+      left: 262px; 
+      overflow: hidden;
+
+    }
+.box11 {
+     top: 1000px; 
+     left: 524px; 
+     overflow: hidden;
+
+    }
+.box12 { 
+     top: 1000px; 
+     left: 788px; 
+     overflow: hidden;
+
+}
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    gap: 15px;
+    margin: 60px 0;
+}
+
+.pagination .page {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+    gap: 15px;
+    position: relative;
+    bottom: 180px;
+}
+
