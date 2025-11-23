@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+body {
+   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+
+.small-void
+{
+    height: 30px;
+}
+
+.big-void
+{
+    height: 90px;
+}
+
+.big-void2
+{
+    height: 380px;
+}
+
+.navbar .nav-link
+{
+    color: rgb(0,0,0);
+}
+
+.navbar .nav-link:hover
+{
+    color: #686363;
+}
+
+.bckimg
+{
+    background-image: url('/assets/Images/img4.avif');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.txtsct
+{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.txtsct h1
+{
+    font-size: 58px;
+    color: wheat;
+}
+
+.txtsct .orange
+{
+    display: block;
+    width: 100px; 
+    height: 4px;
+    background-color: orange;
+    margin: 20px auto 0 auto;
+}
+
+.txtsct p
+{
+    font-size: 22px;
+    color: white;
+}
+
+.content1
+{
+    display: flex;
+    background-color: orange;
+    color: white;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.content1 .whitepth
+{
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    margin: 20px auto 0 auto;
+}
+.content2 {
+    width: 100%;
+    min-height: 60vh;
+    padding: 40px 20px;
+    background-color: rgb(58, 52, 54);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.orangepth
+{
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: orange;
+    margin: 20px auto 0 auto;
+}
+
+.projects
+{
+    position: relative;
+    z-index: 1;
+    
+}
+
+.project-img
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
