@@ -1,0 +1,40 @@
+body {
+    background: #5f9ea0; 
+    height: 100vh;
+}
+
+.input-box1 {
+    background: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    height: 40px;
+    width: 150px;    
+    border-radius: 6px;
+}
+.input-box2 {
+    background: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    height: 40px;
+    width: 150px;    
+    border-radius: 6px;
+}
+
+.input-box3 {
+    background: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    height: 40px;
+    width: 150px;    
+    border-radius: 6px;
+}
+
+.btns button {
+    background: white;
+    border-radius: 15px;
+    padding: 8px 20px;
+    border: none;
+    width: 150px;
+}
+
+
