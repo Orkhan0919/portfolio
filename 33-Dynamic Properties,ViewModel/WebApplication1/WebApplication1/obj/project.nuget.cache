@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "M0rAj7oETGw=",
+  "success": true,
+  "projectFilePath": "/home/potato/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "/home/potato/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.20/microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

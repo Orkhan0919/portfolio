@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "_Layout";
+}
+@{
+    var names = ViewBag.Names;
+}
+
+<h3>Hello</h3>
+@foreach (string item in names)
+{
+    <p>@item</p>
+}
+<p>@TempData["message"]</p>
