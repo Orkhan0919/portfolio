@@ -1,0 +1,21 @@
+@model WebApplication1.Models.Category
+
+<div class="container mt-4">
+    <h2>Category Details</h2>
+    <hr />
+    
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Name: @Model.Name</h5>
+            <h6 class="card-subtitle mb-2 text-muted">ID: @Model.Id</h6>
+            <p class="card-text">
+                <strong>Created At:</strong> <br />
+                @Model.CreatedAt
+            </p>
+            
+            <div class="mt-3">
+                <a asp-action="Index" class="btn btn-secondary">Back</a>
+            </div>
+        </div>
+    </div>
+</div>
