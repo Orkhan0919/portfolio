@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vp01sy7vxiU=",
+  "dgSpecHash": "duDLDAnNfp0=",
   "success": true,
-  "projectFilePath": "/home/potato/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+  "projectFilePath": "/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/WebApplication1.csproj",
   "expectedPackageFiles": [
     "/home/potato/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/potato/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
@@ -156,7 +156,7 @@
     "/home/potato/.nuget/packages/system.text.json/8.0.6/system.text.json.8.0.6.nupkg.sha512",
     "/home/potato/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
     "/home/potato/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/home/potato/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.20/microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512"
+    "/home/potato/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
   ],
   "logs": []
 }

@@ -14,7 +14,6 @@ namespace WebApplication1.Areas.AdminPanel.Controllers
             _context = context;
         }
 
-        // Siyahı səhifəsi
         public async Task<IActionResult> Index()
         {
             var categories = await _context.Categories.ToListAsync(); 

@@ -1,0 +1,45 @@
+@model Product
+
+<h2>Edit Slider</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label asp-for="MainPhoto">Image</label>
+        <input asp-for="MainPhoto" class="form-control" placeholder="~/..."/>
+        <span asp-validation-for="MainPhoto" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="SecondaryPhoto">Image</label>
+        <input asp-for="SecondaryPhoto" class="form-control" placeholder="~/..."/>
+        <span asp-validation-for="SecondaryPhoto" class="text-danger"></span>
+
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Name">Producy Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="Price">Price</label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="SKU">SKU</label>
+        <input asp-for="SKU" class="form-control" />
+        <span asp-validation-for="SKU" class="text-danger"></span>
+    </div><div class="mb-3">
+        <label asp-for="CategoryId">Category</label>
+        <input asp-for="CategoryId" class="form-control" />
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div><div class="mb-3">
+        <label asp-for="Description">Description</label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

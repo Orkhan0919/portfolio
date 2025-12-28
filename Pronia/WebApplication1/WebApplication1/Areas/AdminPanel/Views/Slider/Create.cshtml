@@ -1,0 +1,29 @@
+@model WebApplication1.Models.Flowers
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    
+    <div class="mb-3">
+        <label asp-for="Photo">Image</label>
+        <input asp-for="Photo" class="form-control" placeholder="~/..."/>
+        <span asp-validation-for="Photo" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Title1">Title 1</label>
+        <input asp-for="Title1" class="form-control"/>
+        <span asp-validation-for="Title1" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Title2">Title 2</label>
+        <input asp-for="Title2" class="form-control"/>
+        <span asp-validation-for="Title2" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ButtonLink">Button Link</label>
+        <input asp-for="ButtonLink" class="form-control" placeholder=".html"/>
+        <span asp-validation-for="ButtonLink" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>

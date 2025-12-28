@@ -1,4 +1,7 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace WebApplication1.Models;
+using Microsoft.AspNetCore.Http;
 
 public class Product : BaseEntity
 {
@@ -9,5 +12,8 @@ public class Product : BaseEntity
     public int CategoryId { get; set; }
     public string PrimaryImg { get; set; }      
     public string SecondaryImg { get; set; }
-    public Category Category { get; set; }
+    public Category? Category { get; set; }
+    [NotMapped]
+    public IFormFile? MainPhoto { get; set; }
+    [NotMapped] public IFormFile? SecondaryPhoto { get; set; } 
 }

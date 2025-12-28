@@ -1,0 +1,25 @@
+@model WebApplication1.Models.Product
+
+<div class="container mt-4">
+    <h2>Category Details</h2>
+    <hr />
+    
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Name: @Model.Name</h5>
+            <h6 class="card-subtitle mb-2 ">ID: @Model.Id</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Main image: @Model.PrimaryImg</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Secondary image: @Model.SecondaryImg</h6>
+            <h6 class="card-subtitle mb-2 text-muted">SKU: @Model.SKU</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Category: @Model.Category</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Category ID: @Model.CategoryId</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Description: @Model.Description</h6>
+
+
+
+            <div class="mt-3">
+                <a asp-action="Index" class="btn btn-secondary">Back</a>
+            </div>
+        </div>
+    </div>
+</div>

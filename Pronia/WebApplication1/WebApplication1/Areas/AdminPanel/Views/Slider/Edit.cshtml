@@ -1,0 +1,33 @@
+@model Flowers
+
+<h2>Edit Slider</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label asp-for="Photo">Image</label>
+        <input asp-for="Photo" class="form-control" placeholder="~/..."/>
+        <span asp-validation-for="Photo" class="text-danger"></span>
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="Title1">Slider Title 1</label>
+        <input asp-for="Title1" class="form-control" />
+        <span asp-validation-for="Title1" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Title2">Slider Title 2</label>
+        <input asp-for="Title2" class="form-control" />
+        <span asp-validation-for="Title2" class="text-danger"></span>
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="ButtonLink">Button link</label>
+        <input asp-for="ButtonLink" class="form-control" />
+        <span asp-validation-for="ButtonLink" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

@@ -1,6 +1,5 @@
 ﻿@model WebApplication1.Models.HomeVM
 
-
 @{
     Layout = "_Layout";
 }
@@ -31,8 +30,7 @@
                                     <div class="inner-img">
                                         <div class="scene fill">
                                             <div class="expand-width" data-depth="0.2">
-                                                <img src="@Url.Content(flower.ImageUrl)" alt="Inner Image"/>
-                                            </div>
+                                                <img src="~/pronia/assets/images/website-images/@flower.ImageUrl" alt="Inner Image"/>                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -136,10 +134,10 @@
                                             <div class="product-img">
                                                 <a href="@Url.Action("Detail", "Products", new { id = product.Id })">
                                                     <img class="primary-img"
-                                                         src="~/pronia/assets/images/website-images/@product.PrimaryImg"
+                                                         src="~/pronia/assets/images/products/@product.PrimaryImg"
                                                          alt="@product.Name"/>
                                                     <img class="secondary-img"
-                                                         src="~/pronia/assets/images/website-images/@product.SecondaryImg"
+                                                         src="~/pronia/assets/images/products/@product.SecondaryImg"
                                                          alt="@product.Name"/>
                                                 </a>
                                                 <div class="product-add-action">

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/potato/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj": {}
+    "/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/WebApplication1.csproj": {}
   },
   "projects": {
-    "/home/potato/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj": {
+    "/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/potato/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+        "projectUniqueName": "/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "/home/potato/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+        "projectPath": "/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/WebApplication1.csproj",
         "packagesPath": "/home/potato/.nuget/packages/",
-        "outputPath": "/home/potato/RiderProjects/WebApplication1/WebApplication1/obj/",
+        "outputPath": "/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/potato/.nuget/NuGet/NuGet.Config"
@@ -61,7 +61,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.20, 8.0.20]"
+              "version": "[8.0.22, 8.0.22]"
             }
           ],
           "frameworkReferences": {
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.120/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

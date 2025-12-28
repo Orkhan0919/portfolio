@@ -1,0 +1,18 @@
+@model WebApplication1.Models.Flowers
+
+<div class="container mt-4">
+    <h2>Category Details</h2>
+    <hr />
+    
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Name: @Model.Title1</h5>
+            <h6 class="card-subtitle mb-2 text-muted">ID: @Model.Id</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Image url: @Model.ImageUrl</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Button link: @Model.ButtonLink</h6>
+            <div class="mt-3">
+                <a asp-action="Index" class="btn btn-secondary">Back</a>
+            </div>
+        </div>
+    </div>
+</div>
