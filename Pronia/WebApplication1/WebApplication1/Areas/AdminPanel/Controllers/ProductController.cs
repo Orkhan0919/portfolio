@@ -28,14 +28,16 @@ public class ProductController : Controller
     public async Task<IActionResult> Create()
     {
         ViewBag.Categories = await _context.Categories.ToListAsync();
+        ViewBag.Tags = await _context.Tags.ToListAsync();
+        ;
         return View();
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(Product product)
+    public async Task<IActionResult> Create(Product product,int[] tagIds)
     {
         ViewBag.Categories = await _context.Categories.ToListAsync();
-        
+        ViewBag.Tags = await _context.Tags.ToListAsync();
         if (product.MainPhoto == null) ModelState.AddModelError("MainPhoto", "Required");
         
         else if (product.MainPhoto != null && !product.MainPhoto.
@@ -58,6 +60,7 @@ public class ProductController : Controller
             ModelState.AddModelError("Name", "This product name is already in use!");
             return View(product);
         }
+        
 
         ModelState.Remove("PrimaryImg");
         ModelState.Remove("SecondaryImg");
@@ -73,7 +76,19 @@ public class ProductController : Controller
 
         await _context.Products.AddAsync(product);
         await _context.SaveChangesAsync();
-
+        if (tagIds != null)
+        {
+            foreach (var tagId in tagIds)
+            {
+                ProductTag pt = new ProductTag
+                {
+                    ProductId = product.Id,
+                    TagId = tagId
+                };
+                _context.ProductTags.Add(pt);
+            }
+            await _context.SaveChangesAsync();
+        }
         return RedirectToAction(nameof(Index));
     }
 

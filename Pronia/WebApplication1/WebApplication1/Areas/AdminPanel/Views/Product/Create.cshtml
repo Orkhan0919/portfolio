@@ -19,7 +19,17 @@
         <input asp-for="Name" class="form-control"/>
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-
+    <div class="mb-3">
+        <label>Select Tags</label>
+        <select name="tagIds" class="form-control" multiple>
+            @foreach (var tag in ViewBag.Tags)
+            {
+                <option value="@tag.TagId">@tag.TagName</option>
+            }
+        </select>
+        <small class="text-muted">Please keep CTRL while
+            selecting tags if you want select more than one tag.</small>
+    </div>
     <div class="mb-3">
         <label asp-for="Description">Describtion</label>
         <input asp-for="Description" class="form-control"/>

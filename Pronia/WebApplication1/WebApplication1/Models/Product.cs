@@ -13,6 +13,7 @@ public class Product : BaseEntity
     public string PrimaryImg { get; set; }      
     public string SecondaryImg { get; set; }
     public Category? Category { get; set; }
+    public List<ProductTag> ProductTags { get; set; } = new();
     [NotMapped]
     public IFormFile? MainPhoto { get; set; }
     [NotMapped] public IFormFile? SecondaryPhoto { get; set; } 

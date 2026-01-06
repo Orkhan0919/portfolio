@@ -16,6 +16,8 @@ namespace WebApplication1.Models
         public DbSet<Flowers> Flowers { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Tags> Tags { get; set; }
+        public DbSet<ProductTag> ProductTags { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

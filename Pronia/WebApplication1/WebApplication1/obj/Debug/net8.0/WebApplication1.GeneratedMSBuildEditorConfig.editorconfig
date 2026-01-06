@@ -82,6 +82,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9TbGlkZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/Areas/AdminPanel/Views/Tag/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9UYWcvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/Areas/AdminPanel/Views/Tag/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9UYWcvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/Areas/AdminPanel/Views/Tag/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9UYWcvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/Areas/AdminPanel/Views/Tag/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9UYWcvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/Areas/AdminPanel/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9fVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -92,6 +108,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/Views/About/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWJvdXQvaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/Views/Home/Error.cshtml]
@@ -108,6 +128,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/Views/Shop/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hvcC9BYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/potato/Desktop/Projects/portfolio/Pronia/WebApplication1/WebApplication1/Views/Shop/Index.cshtml]

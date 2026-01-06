@@ -30,7 +30,8 @@
                                     <div class="inner-img">
                                         <div class="scene fill">
                                             <div class="expand-width" data-depth="0.2">
-                                                <img src="~/pronia/assets/images/website-images/@flower.ImageUrl" alt="Inner Image"/>                                            </div>
+                                                <img src="~/pronia/assets/images/website-images/@flower.ImageUrl"
+                                                     alt="Inner Image"/></div>
                                         </div>
                                     </div>
                                 </div>
@@ -132,7 +133,7 @@
                                     <div class="col-xl-3 col-md-4 col-sm-6">
                                         <div class="product-item">
                                             <div class="product-img">
-                                                <a href="@Url.Action("Detail", "Products", new { id = product.Id })">
+                                                <a href="@Url.Action("About", "Shop", new { id = product.Id })">
                                                     <img class="primary-img"
                                                          src="~/pronia/assets/images/products/@product.PrimaryImg"
                                                          alt="@product.Name"/>
@@ -140,6 +141,7 @@
                                                          src="~/pronia/assets/images/products/@product.SecondaryImg"
                                                          alt="@product.Name"/>
                                                 </a>
+                                                
                                                 <div class="product-add-action">
                                                     <ul>
                                                         <li>

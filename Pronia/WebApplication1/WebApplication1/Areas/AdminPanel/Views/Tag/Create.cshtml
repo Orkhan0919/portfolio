@@ -1,0 +1,25 @@
+@model Tags
+
+<div class="container mt-4">
+    <h2>Create Tag</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Create" method="post">
+                <input type="hidden" asp-for="TagId" />
+
+                <div class="mb-3">
+                    <label asp-for="TagName" class="form-label">Tag Name</label>
+                    <input asp-for="TagName" class="form-control" placeholder="Example: Organic" />
+                    <span asp-validation-for="TagName" class="text-danger"></span>
+                </div>
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary">Create Tag</button>
+                    <a asp-action="Index" class="btn btn-secondary">Back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

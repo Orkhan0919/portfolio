@@ -32,7 +32,6 @@ public class SliderController : Controller
     }
 
     [HttpPost]
-    [HttpPost]
 public async Task<IActionResult> Create(Flowers flowers)
 {
     if (flowers.Photo == null)

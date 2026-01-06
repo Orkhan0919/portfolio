@@ -1,0 +1,17 @@
+@model WebApplication1.Models.Tags
+
+<div class="container mt-4">
+    <h2>Tag Details</h2>
+    <hr />
+    
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Tag Id: @Model.TagId</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Tag Name: @Model.TagName</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Created Time: @Model.CreatedAt</h6>
+            <div class="mt-3">
+                <a asp-action="Index" class="btn btn-secondary">Back</a>
+            </div>
+        </div>
+    </div>
+</div>
