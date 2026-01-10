@@ -1,71 +1,86 @@
 @model WebApplication1.Models.ViewModels.RegisterVM
-@{
-    ViewData["Title"] = "Register";
-}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-0 shadow-lg p-4">
+                <h2 class="text-center mb-4">Create Account</h2>
+                
+                <form asp-action="Register" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger small mb-3"></div>
 
-<main class="main-content">
-    <div class="breadcrumb-area breadcrumb-height"
-         data-bg-image="assets/images/breadcrumb/bg/1-1-1919x388.jpg">
-        <div class="container h-100">
-            <div class="row h-100">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-item">
-                        <h2 class="breadcrumb-heading"> Register Page</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="login-register-area section-space-y-axis-100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 pt-5 pt-lg-0">
-                    <form method="post">
-                        <div class="login-form">
-                            <h4 class="login-title">Register</h4>
-                            <div class="row">
-                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                <div class="col-md-6 col-12">
-                                    <label for="Name"> Name</label>
-                                    <input asp-for="Name" placeholder="Name" />
-                                    <span asp-validation-for="Name" class="text-danger"></span>
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <label for="SurName"> SurName</label>
-                                    <input asp-for="SurName" placeholder="SurName" />
-                                    <span asp-validation-for="SurName" class="text-danger"></span>
-                                </div>
-                                <div class="col-md-12">
-                                    <label for="Email"> Email</label>
-                                    <input asp-for="Email" placeholder="Email" />
-                                    <span asp-validation-for="Email" class="text-danger"></span>
-                                </div>
-                                <div class="col-md-12">
-                                    <label for="UserName"> UserName</label>
-                                    <input asp-for="UserName" placeholder="UserName" />
-                                    <span asp-validation-for="UserName" class="text-danger"></span>
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <label for="Password"> Password</label>
-                                    <input asp-for="Password" placeholder="Password" />
-                                    <span asp-validation-for="Password" class="text-danger"></span>
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <label for="ConfirmPassword"> ConfirmPassword</label>
-                                    <input asp-for="ConfirmPassword" placeholder="ConfirmPassword " />
-                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-custom-size lg-size btn-pronia-primary">
-                                        Register
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Name" class="form-label">Name</label>
+                            <input asp-for="Name" class="form-control custom-input" />
+                            <span asp-validation-for="Name" class="text-danger small"></span>
                         </div>
-                    </form>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Surname" class="form-label">Surname</label>
+                            <input asp-for="Surname" class="form-control custom-input" />
+                            <span asp-validation-for="Surname" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Username" class="form-label">Username</label>
+                        <input asp-for="Username" class="form-control custom-input" />
+                        <span asp-validation-for="Username" class="text-danger small"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Email" class="form-label">Email</label>
+                        <input asp-for="Email" class="form-control custom-input" />
+                        <span asp-validation-for="Email" class="text-danger small"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Password" class="form-label">Password</label>
+                        <input asp-for="Password" type="password" class="form-control custom-input" />
+                        <span asp-validation-for="Password" class="text-danger small"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="ConfirmPassword" class="form-label">Confirm Password</label>
+                        <input asp-for="ConfirmPassword" type="password" class="form-control custom-input" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-green w-100 py-2 mt-2">Sign Up</button>
+                </form>
+
+                <div class="mt-3 text-center">
+                    <small>Already registered? <a asp-action="Login" class="text-success">Login here</a></small>
                 </div>
             </div>
         </div>
     </div>
-</main>
+</div>
+
+<style>
+    .custom-input {
+        border: 1px solid #ddd;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .custom-input:focus {
+        border-color: #28a745;
+        box-shadow: 0px 6px 12px rgba(40, 167, 69, 0.2);
+        outline: none;
+    }
+
+    .btn-green {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn-green:hover {
+        background-color: #218838;
+        transform: translateY(-2px);
+    }
+</style>

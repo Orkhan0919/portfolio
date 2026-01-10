@@ -1,3 +1,6 @@
+@using Microsoft.AspNetCore.Identity
+@using WebApplication1.Models
+@inject SignInManager<ApplicationUser> SignInManager
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -143,20 +146,30 @@
                     >
                       <i class="pe-7s-users"></i>
                     </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="settingButton"
-                    >
-                      <li>
-                        <a class="dropdown-item" href="my-account.html"
-                        >My account</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="login-register.html"
-                        >Login | Register</a
-                        >
-                      </li>
+                    <ul class="dropdown-menu" aria-labelledby="settingButton">
+                      @if (SignInManager.IsSignedIn(User))
+                      {
+                        <li>
+                          <a class="dropdown-item fw-bold text-success" asp-controller="Account" asp-action="MyAccount">
+                            <i class="pe-7s-user"></i> @User.Identity.Name
+                          </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                          <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="d-inline">
+                            <button type="submit" class="dropdown-item text-danger">Logout</button>
+                          </form>
+                        </li>
+                      }
+                      else
+                      {
+                        <li>
+                          <a class="dropdown-item" asp-controller="Account" asp-action="Login">Login</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" asp-controller="Account" asp-action="Register">Register</a>
+                        </li>
+                      }
                     </ul>
                   </li>
                   <li class="d-none d-lg-block">
