@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Models;
@@ -5,6 +6,7 @@ using WebApplication1.Models;
 namespace WebApplication1.Areas.AdminPanel.Controllers
 {
     [Area("AdminPanel")]
+    [Authorize(Roles = "SuperAdmin, Admin")]
     public class CategoryController : Controller
     {
         private readonly AppDbContext _context;
@@ -94,7 +96,7 @@ namespace WebApplication1.Areas.AdminPanel.Controllers
             return View(category);
         }
 
-
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
             var category = await _context.Categories.FindAsync(id);

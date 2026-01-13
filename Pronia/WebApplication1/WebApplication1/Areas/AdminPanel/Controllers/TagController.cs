@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Models; 
 using Microsoft.EntityFrameworkCore;
@@ -5,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace WebApplication1.Areas.AdminPanel.Controllers;
 
 [Area("AdminPanel")]
+[Authorize(Roles = "SuperAdmin, Admin")]
 public class TagController : Controller
 {
     private readonly AppDbContext _context;
@@ -91,6 +93,8 @@ public class TagController : Controller
 
         return View(tag);
     }
+    
+    [Authorize(Roles = "SuperAdmin")]
     public async Task<IActionResult> Delete(int id)
     {
         var tag = await _context.Tags.FindAsync(id);

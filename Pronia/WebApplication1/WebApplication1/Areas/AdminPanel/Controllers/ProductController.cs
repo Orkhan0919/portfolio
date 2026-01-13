@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Models;
@@ -7,6 +8,7 @@ using WebApplication1.Utilities.Extentions;
 namespace WebApplication1.Areas.AdminPanel.Controllers;
 
 [Area("AdminPanel")]
+[Authorize(Roles = "SuperAdmin, Admin")]
 public class ProductController : Controller
 {
     private readonly AppDbContext _context;
@@ -168,7 +170,7 @@ public class ProductController : Controller
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
-
+    [Authorize(Roles = "SuperAdmin")]
     public async Task<IActionResult> Delete(int id)
     {
         var product = await _context.Products.FindAsync(id);

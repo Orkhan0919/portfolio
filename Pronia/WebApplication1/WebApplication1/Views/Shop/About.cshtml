@@ -1,67 +1,138 @@
-@model WebApplication1.Models.HomeVM
+@model WebApplication1.Models.Product
+@{
+Layout = "_Layout";
+}
 
-@foreach (var product in Model.Products)
-{
-    <div class="col-xl-3 col-md-4 col-sm-6">
-        <div class="product-item">
-            <div class="product-img">
-                <a href="@Url.Action("Detail", "Products", new { id = product.Id })">
-                    <img class="primary-img"
-                         src="~/pronia/assets/images/products/@product.PrimaryImg"
-                         alt="@product.Name"/>
-                    <img class="secondary-img"
-                         src="~/pronia/assets/images/products/@product.SecondaryImg"
-                         alt="@product.Name"/>
-                </a>
-                <div class="product-add-action">
-                    <ul>
-                        <li>
-                            <a href="~/pronia/wishlist.html"
-                               data-tippy="Add to wishlist"
-                               data-tippy-inertia="true"
-                               data-tippy-animation="shift-away"
-                               data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder">
-                                <i class="pe-7s-like"></i>
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-9">
+
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="row g-0">
+
+                    <div class="col-md-6 d-flex align-items-center justify-content-center p-0 bg-light">
+                        <div class="product-img-container">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid primary-img"
+                                     src="~/pronia/assets/images/products/@Model.PrimaryImg"
+                                     alt="@Model.Name">
+
+                                @if (!string.IsNullOrEmpty(Model.SecondaryImg))
+                                {
+                                <img class="img-fluid secondary-img"
+                                     src="~/pronia/assets/images/products/@Model.SecondaryImg"
+                                     alt="@Model.Name">
+                                }
                             </a>
-                        </li>
-                        <li class="quuickview-btn" data-bs-toggle="modal"
-                            data-bs-target="#quickModal">
-                            <a href="~/pronia/#" data-tippy="Quickview"
-                               data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50"
-                               data-tippy-arrow="true" data-tippy-theme="sharpborder">
-                                <i class="pe-7s-look"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="~/pronia/cart.html" data-tippy="Add to cart"
-                               data-tippy-inertia="true"
-                               data-tippy-animation="shift-away"
-                               data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder">
-                                <i class="pe-7s-cart"></i>
-                            </a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-flex align-items-center bg-white">
+                        <div class="card-body p-4 p-lg-5">
+
+                            <h6 class="text-uppercase fw-bold mb-2 light-green-text">
+                                @(Model.Category?.Name ?? "General")
+                            </h6>
+
+                            <h2 class="card-title fw-bold text-dark mb-3">@Model.Name</h2>
+
+                            <div class="price-box mb-4">
+                                <span class="h3 fw-bold light-green-text">$@Model.Price</span>
+                            </div>
+
+                            <div class="product-tags mb-4">
+                                <p class="mb-2 text-muted small fw-bold text-uppercase">Tags:</p>
+                                @if (Model.ProductTags != null && Model.ProductTags.Any())
+                                {
+                                    foreach (var pt in Model.ProductTags)
+                                    {
+                                        <span class="badge rounded-pill bg-light-green text-white me-1 px-3 py-2">
+                                            #@pt.Tag.TagName
+                                        </span>
+                                    }
+                                }
+                                else
+                                {
+                                    <span class="text-muted small">No tags</span>
+                                }
+                            </div>
+                            <ul class="d-flex list-unstyled gap-1 text-warning">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+
+                            <div class="d-grid mt-5">
+                                <button class="btn btn-light-green btn-lg rounded-pill shadow-sm py-3 text-white fw-bold">
+                                    <i class="pe-7s-cart me-2"></i> Add to Cart
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="product-content">
-                <a class="product-name"
-                   href="@Url.Action("Detail", "Products", new { id = product.Id })">@product.Name</a>
-                <div class="price-box pb-1">
-                    <span class="new-price">$@product.Price</span>
-                </div>
-                <div class="rating-box">
-                    <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                    </ul>
-                </div>
-            </div>
+
         </div>
     </div>
-}
+</div>
+
+<style>
+    .light-green-text {
+        color: #82b440 !important; 
+    }
+
+    .bg-light-green {
+        background-color: #82b440 !important;
+    }
+
+    .btn-light-green {
+        background-color: #82b440;
+        border: none;
+        transition: 0.3s;
+    }
+
+    .btn-light-green:hover {
+        background-color: #72a035; 
+        color: white;
+    }
+
+    .product-img-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .secondary-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .product-img-container:hover .primary-img {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .product-img-container:hover .secondary-img {
+        opacity: 1;
+        visibility: visible;
+    }
+</style>
