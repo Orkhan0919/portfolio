@@ -1,0 +1,59 @@
+@model List<WebApplication1.ViewModels.BasketItemVM>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Səbətim";
+    decimal total = 0;
+}
+
+<div class="container mt-5">
+    <h2>Your Basket</h2>
+    
+    @if (Model.Count > 0)
+    {
+        <table class="table table-bordered text-center align-middle">
+            <thead class="bg-light">
+            <tr>
+                <th>Image</th>
+                <th>Name</th> 
+                <th>Price</th>
+                <th>Count</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                decimal rowTotal = item.Price * item.Count;
+                total += rowTotal;
+
+                <tr>
+                    <td>
+                        <img src="~/pronia/assets/images/products/@item.Image" alt="@item.Name" width="80" height="80" style="object-fit: cover;" />
+                    </td>
+                    <td>@item.Name</td>
+                    <td>@item.Price ₼</td>
+                    <td>@item.Count</td>
+                    <td>@rowTotal ₼</td>
+                    <td>
+                        <a href="/Basket/RemoveItem/@item.Id" class="btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i> Sil
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+
+        <div class="text-end">
+            <h3>Total price: @total ₼</h3>
+            <a href="/Checkout/Index" class="btn btn-success mt-3">Order</a>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning text-center">
+            Your basket is empty. <a href="/" class="alert-link">Continue to shopping</a>
+        </div>
+    }
+</div>

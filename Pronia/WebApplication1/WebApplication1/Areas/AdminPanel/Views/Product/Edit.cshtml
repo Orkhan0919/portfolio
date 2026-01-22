@@ -1,45 +1,84 @@
-@model Product
+@model WebApplication1.ViewModels.ProductUpdateVM
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<h2>Edit Slider</h2>
+<h2>Update Product</h2>
 
 <form asp-action="Edit" method="post" enctype="multipart/form-data">
     <input type="hidden" asp-for="Id" />
-    <div class="mb-3">
-        <label asp-for="MainPhoto">Image</label>
-        <input asp-for="MainPhoto" class="form-control" placeholder="~/..."/>
-        <span asp-validation-for="MainPhoto" class="text-danger"></span>
-    </div>
-    <div class="mb-3">
-        <label asp-for="SecondaryPhoto">Image</label>
-        <input asp-for="SecondaryPhoto" class="form-control" placeholder="~/..."/>
-        <span asp-validation-for="SecondaryPhoto" class="text-danger"></span>
+    <input type="hidden" asp-for="ExistingPrimaryImg" />
+    <input type="hidden" asp-for="ExistingSecondaryImg" />
 
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label class="form-label fw-bold">Current Main Image</label>
+            <div class="mb-2">
+                <img src="~/pronia/assets/images/products/@Model.ExistingPrimaryImg" style="width: 150px; object-fit: cover;" class="img-thumbnail" />
+            </div>
+            <label asp-for="MainPhoto">Change Main Photo</label>
+            <input asp-for="MainPhoto" class="form-control" />
+            <span asp-validation-for="MainPhoto" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label class="form-label fw-bold">Current Secondary Image</label>
+            <div class="mb-2">
+                <img src="~/pronia/assets/images/products/@Model.ExistingSecondaryImg" style="width: 150px; object-fit: cover;" class="img-thumbnail" />
+            </div>
+            <label asp-for="SecondaryPhoto">Change Secondary Photo</label>
+            <input asp-for="SecondaryPhoto" class="form-control" />
+            <span asp-validation-for="SecondaryPhoto" class="text-danger"></span>
+        </div>
     </div>
 
     <div class="mb-3">
-        <label asp-for="Name">Producy Name</label>
+        <label asp-for="Name">Product Name</label>
         <input asp-for="Name" class="form-control" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-    
-    <div class="mb-3">
-        <label asp-for="Price">Price</label>
-        <input asp-for="Price" class="form-control" />
-        <span asp-validation-for="Price" class="text-danger"></span>
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label asp-for="Price">Price</label>
+            <input asp-for="Price" type="number" step="0.01" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="SKU">SKU</label>
+            <input asp-for="SKU" class="form-control" />
+            <span asp-validation-for="SKU" class="text-danger"></span>
+        </div>
     </div>
+
     <div class="mb-3">
-        <label asp-for="SKU">SKU</label>
-        <input asp-for="SKU" class="form-control" />
-        <span asp-validation-for="SKU" class="text-danger"></span>
-    </div><div class="mb-3">
         <label asp-for="CategoryId">Category</label>
-        <input asp-for="CategoryId" class="form-control" />
-        <span asp-validation-for="Category" class="text-danger"></span>
-    </div><div class="mb-3">
+        <select asp-for="CategoryId" class="form-control" asp-items="@(new SelectList(ViewBag.Categories, "Id", "Name"))">
+            <option value="">-- Select Category --</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TagIds">Tags</label>
+        <select asp-for="TagIds" class="form-control" multiple>
+            @if (ViewBag.Tags != null)
+            {
+                foreach (var tag in ViewBag.Tags)
+                {
+                    <option value="@tag.TagId" selected="@(Model.TagIds != null && Model.TagIds.Any(t => t == tag.TagId))">
+                        @tag.TagName
+                    </option>
+                }
+            }
+        </select>
+        <small class="text-muted">Hold Ctrl to select multiple tags.</small>
+    </div>
+
+    <div class="mb-3">
         <label asp-for="Description">Description</label>
-        <input asp-for="Description" class="form-control" />
+        <textarea asp-for="Description" class="form-control" rows="4"></textarea>
         <span asp-validation-for="Description" class="text-danger"></span>
     </div>
+
     <button type="submit" class="btn btn-primary">Update</button>
     <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>

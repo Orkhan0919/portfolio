@@ -1,0 +1,33 @@
+@model List<WebApplication1.ViewModels.BasketItemVM>
+
+<div class="offcanvas-body">
+    <div class="minicart-content">
+        <div class="minicart-heading">
+            <h4 class="mb-0">Shopping Cart</h4>
+            <a href="#" class="button-close"><i class="pe-7s-close"></i></a>
+        </div>
+        <ul class="minicart-list">
+            @foreach (var item in Model)
+            {
+                <li class="minicart-product">
+                    <a class="product-item_remove" href="#"><i class="pe-7s-close"></i></a>
+                    <a href="#" class="product-item_img">
+                        <img class="img-full" src="~/pronia/assets/images/products/@item.Image" alt="@item.Name" />
+                    </a>
+                    <div class="product-item_content">
+                        <a class="product-item_title" href="#">@item.Name</a>
+                        <span class="product-item_quantity">@item.Count x $@item.Price</span>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+    <div class="minicart-item_total">
+        <span>Subtotal</span>
+        <span class="ammount">$@Model.Sum(x => x.Price * x.Count)</span>
+    </div>
+    <div class="group-btn_wrap d-grid gap-2">
+        <a href="/Basket/Index" class="btn btn-dark">>>>>VIEW BASKET<<<<<</a>
+        <a href="/Order/Checkout" class="btn btn-dark">Checkout</a>
+    </div>
+</div>

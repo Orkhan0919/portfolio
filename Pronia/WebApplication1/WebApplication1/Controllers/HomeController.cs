@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using WebApplication1.ViewModels;
 
 namespace WebApplication1.Controllers
 {
@@ -16,10 +17,36 @@ namespace WebApplication1.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var viewModel = new HomeVM
+            
+            var products = await _context.Products
+                .Include(p => p.Category) 
+                .ToListAsync();
+
+            var flowers = await _context.Flowers .ToListAsync();
+
+            HomeVM viewModel = new HomeVM
             {
-                Flowers = await _context.Flowers.ToListAsync(),
-                Products = await _context.Products.ToListAsync()
+                Products = products,
+                Flowers = flowers,
+
+                ProductTags = await _context.ProductTags.ToListAsync(),
+
+                Categories = await _context.Categories
+                    .Select(c => new CategoryItemVM 
+                    {
+                        Id = c.Id,     
+                        Name = c.Name, 
+                        ProductCount = c.Products.Count 
+                    })
+                    .ToListAsync(),
+
+                Tags = await _context.Tags
+                    .Select(t => new TagItemVM
+                    {
+                        Id = t.TagId,      
+                        Name = t.TagName   
+                    })
+                    .ToListAsync()
             };
 
             return View(viewModel);

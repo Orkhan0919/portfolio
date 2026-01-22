@@ -26,6 +26,10 @@ public class AccountController : Controller
     [HttpPost]
     public async Task<IActionResult> Login(LoginVM model)
     {
+        if (!ModelState.IsValid) 
+        {
+            return View(model);
+        }
         var user = await _userManager.FindByEmailAsync(model.Email);
         if (user != null) {
             if (!await _userManager.IsEmailConfirmedAsync(user)) {
@@ -51,7 +55,7 @@ public class AccountController : Controller
     public async Task<IActionResult> Logout()    {
         await _signInManager.SignOutAsync();
 
-        return RedirectToAction("Login", "Account");
+        return RedirectToAction("Index", "Home");
         
     }
     [HttpGet]
