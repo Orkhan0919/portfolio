@@ -1,0 +1,43 @@
+@model IEnumerable<Fiorella.Models.Shipping>
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Shipping Table</h4>
+                <div class="table-responsive">
+                    <a asp-area="AdminPanel" asp-controller="Shipping" asp-action="Create" class="btn btn-success mb-3">Create</a>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>No#</th>
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>Details</th>
+                            <th>Settings</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @{
+                            var k = 0;
+                        }
+                        @foreach(var item in Model) {
+                            k++;
+                            <tr>
+                                <td>@k</td>
+                                <td><img src="~/assets/images/website-images/@item.ImageURL" style="width:60px;height:60px;object-fit:cover" /></td>
+                                <td>@item.Title</td>
+                                <td>@(item.Details?.Length > 80 ? item.Details.Substring(0,80) + "..." : item.Details)</td>
+                                <td>
+                                    <a asp-area="AdminPanel" asp-controller="Shipping" asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Details</a>
+                                    <a asp-area="AdminPanel" asp-controller="Shipping" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                                    <a asp-area="AdminPanel" asp-controller="Shipping" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+@model Fiorella.Models.Shipping
+<div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Shipping Details</h4>
+                <dl class="row">
+                    <dt class="col-sm-3">Id</dt>
+                    <dd class="col-sm-9">@Model.Id</dd>
+                    <dt class="col-sm-3">Title</dt>
+                    <dd class="col-sm-9">@Model.Title</dd>
+                    <dt class="col-sm-3">Details</dt>
+                    <dd class="col-sm-9">@Model.Details</dd>
+                    <dt class="col-sm-3">Image</dt>
+                    <dd class="col-sm-9"><img src="~/assets/images/website-images/@Model.ImageURL" style="width:150px;height:150px;object-fit:cover" /></dd>
+                </dl>
+                <a asp-area="AdminPanel" asp-controller="Shipping" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+                <a asp-area="AdminPanel" asp-controller="Shipping" asp-action="Index" class="btn btn-light">Back</a>
+            </div>
+        </div>
+    </div>
+</div>

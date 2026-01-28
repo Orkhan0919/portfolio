@@ -1,0 +1,38 @@
+@model Fiorella.Models.Slider
+<div class="row">
+  <div class="col-md-8 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Edit Slider</h4>
+        <form asp-area="AdminPanel" asp-controller="Slider" asp-action="Edit" method="post" class="forms-sample">
+          <input type="hidden" asp-for="Id" />
+          <div class="form-group">
+            <label for="Title">Title</label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+          </div>
+          <div class="form-group">
+            <label for="SubTitle">SubTitle</label>
+            <input asp-for="SubTitle" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="Description">Description</label>
+            <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="ImageURL">Image URL</label>
+              <input asp-for="ImageURL" class="form-control" />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="Order">Order</label>
+              <input asp-for="Order" class="form-control" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary me-2">Save</button>
+          <a asp-area="AdminPanel" asp-controller="Slider" asp-action="Index" class="btn btn-light">Cancel</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

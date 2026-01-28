@@ -1,0 +1,22 @@
+@model Fiorella.Models.ProductImage
+<div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Product Image Details</h4>
+                <dl class="row">
+                    <dt class="col-sm-3">Id</dt>
+                    <dd class="col-sm-9">@Model.Id</dd>
+                    <dt class="col-sm-3">Product</dt>
+                    <dd class="col-sm-9">@Model.Product?.Name</dd>
+                    <dt class="col-sm-3">Image</dt>
+                    <dd class="col-sm-9"><img src="~/assets/images/website-images/@Model.ImageURL" style="width:150px;height:150px;object-fit:cover" /></dd>
+                    <dt class="col-sm-3">Is Primary</dt>
+                    <dd class="col-sm-9">@((Model.IsPrimary==true) ? "Yes" : "No")</dd>
+                </dl>
+                <a asp-area="AdminPanel" asp-controller="ProductImage" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+                <a asp-area="AdminPanel" asp-controller="ProductImage" asp-action="Index" class="btn btn-light">Back</a>
+            </div>
+        </div>
+    </div>
+</div>
